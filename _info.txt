@@ -7,5 +7,5 @@ docker build -t ms3rd .
  docker run --name ms3rd -d -p 1688:1688 -t ms3rd
  
 # enter container:
-docker exec -it ms3rd1 /bin/sh
+docker exec -it ms3rd /bin/sh
 
