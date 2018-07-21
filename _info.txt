@@ -1,10 +1,10 @@
 # using:
 # vlmcsd-armv7el-uclibc-static (for Raspberry Pi 3 B+) as vlmcsd
 # build image:
-docker build -t ms3rd .
+docker build -t eagle1/ms3rd .
 
 # run the container:
- docker run --name ms3rd -d -p 1688:1688 -t ms3rd
+ docker run --name ms3rd --restart unless-stopped -d -p 1688:1688 -t ms3rd
  
 # enter container:
 docker exec -it ms3rd /bin/sh
